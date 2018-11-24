@@ -10,9 +10,6 @@ $(document).ready(function () {
         messagingSenderId: "719690047313"
       };
       firebase.initializeApp(config);
-x   
-    var database = firebase.database();
-
 
     database.ref().on("child_added", function (snapshot) {
         var row = $("<tr>");
